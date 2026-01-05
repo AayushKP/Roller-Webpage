@@ -9,7 +9,7 @@ const stats = [
 
 export function HeroStats() {
   return (
-    <div className="flex flex-col md:flex-row gap-12 md:gap-24">
+    <div className="flex z-10 flex-col md:flex-row gap-12 md:gap-24">
       {stats.map((stat, index) => (
         <motion.div
           key={index}
@@ -22,10 +22,10 @@ export function HeroStats() {
           }}
           className="flex flex-col"
         >
-          <span className="text-sm sm:text-lg md:text-xl xl:text-3xl xxl:text-6xl font-bold bg-clip-text text-transparent bg-linear-to-br from-white via-white to-white/70 tracking-tighter">
+          <span className="text-sm sm:text-lg md:text-xl xl:text-3xl xxl:text-6xl font-bold bg-clip-text text-transparent bg-linear-to-br from-white via-white to-white tracking-tighter">
             {stat.value}
           </span>
-          <span className="text-xs text-muted-foreground mt-1 text-white/50">
+          <span className="text-xs text-muted-foreground mt-1 text-white">
             {stat.label}
           </span>
         </motion.div>

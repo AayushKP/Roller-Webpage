@@ -60,14 +60,14 @@ export function Hero() {
       </div>
 
       {/* Bottom Area */}
-      <div className="absolute bottom-6 md:bottom-12 left-0 w-full px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 items-end gap-8 pointer-events-none ">
+      <div className="absolute bottom-6 md:bottom-12 left-0 w-full px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 items-end gap-8 pointer-events-none z-10 ">
         {/* Left: Stats */}
         <div className="pointer-events-auto md:justify-self-start hidden md:block">
           <HeroStats />
         </div>
 
         {/* Center: Subtext */}
-        <div className="pointer-events-auto md:justify-self-center text-center">
+        <div className="pointer-events-auto z-10 md:justify-self-center text-center">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ export function Hero() {
           >
             <div className="absolute top-2 right-2 p-1 cursor-pointer opacity-50 hover:opacity-100">
               <div className="flex items-center space-x-1 bg-white/10 rounded-full px-2 py-0.5">
-                <span className="w-1 h-3 bg-primary rounded-full" />
+                <span className="w-1 h-2 bg-primary rounded-full" />
                 <span className="text-[10px] text-white/70 uppercase tracking-wider">
                   Experiments
                 </span>
@@ -98,7 +98,7 @@ export function Hero() {
             <p className="text-sm font-medium text-white mb-1 pr-16">
               Test product ideas without guesswork
             </p>
-            <p className="text-xs text-muted-foreground mb-2">
+            <p className="text-xs text-muted-foreground mb-2 italic">
               See real impact as users interact
             </p>
             <p className="text-xs text-primary font-bold tracking-wide">

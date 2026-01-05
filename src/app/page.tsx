@@ -7,7 +7,7 @@ export default function Home() {
       <Navbar />
       <Hero />
 
-      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-48 md:h-64 bg-linear-to-t from-black/60 via-black/20 to-transparent z-10" />
+      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-48 md:h-64 bg-linear-to-t from-black/60 via-black/20 to-transparent z-0" />
     </main>
   );
 }
