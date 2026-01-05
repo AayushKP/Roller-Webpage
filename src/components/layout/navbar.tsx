@@ -71,7 +71,7 @@ export function Navbar() {
 
         {/* Right: Actions */}
         <div className="flex items-center space-x-4">
-          <div className="hidden md:flex items-center bg-white/10 rounded-full px-3 py-1.5 border border-white/5 focus-within:border-white/20 transition-colors w-40 lg:w-64">
+          <div className="hidden md:flex items-center bg-white/10 rounded-xl px-3 py-1.5 border border-white/5 focus-within:border-white/20 transition-colors w-40 lg:w-64">
             <Search className="w-4 h-4 text-muted-foreground mr-2" />
             <input
               type="text"
@@ -79,7 +79,7 @@ export function Navbar() {
               className="bg-transparent border-none outline-none text-sm text-white placeholder:text-muted-foreground w-full"
             />
           </div>
-          <button className="p-2 rounded-full hover:bg-white/10 transition-colors text-muted-foreground hover:text-white">
+          <button className="p-2 rounded-full hover:bg-white/10 transition-colors text-muted-foreground bg-white/5 hover:text-white">
             <User className="w-5 h-5" />
           </button>
         </div>

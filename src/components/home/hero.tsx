@@ -32,7 +32,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-6xl font-semibold tracking-[-0.02em] leading-[1.05] text-white drop-shadow-2xl mb-12 md:mb-10"
+          className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-7xl font-semibold tracking-[-0.02em] leading-[1.05] text-white drop-shadow-2xl mb-12 md:mb-10"
         >
           Turn product changes <br className="hidden md:block" />
           <span className="bg-clip-text text-transparent bg-linear-to-b from-white via-white/95 to-white/60">
@@ -51,7 +51,7 @@ export function Hero() {
             className="group relative h-14 pl-8 pr-6 rounded-full text-lg bg-black/40 border border-white/10 hover:bg-black/60 shadow-[0_0_30px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_50px_-10px_rgba(255,255,255,0.4)] backdrop-blur-xl transition-all duration-500 overflow-hidden"
           >
             <div className="absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
-            <span className="relative z-10 font-semibold tracking-tight">
+            <span className="relative text-sm text-white z-10 italic font-serif">
               Run Experiments
             </span>
             <FlaskConical className="ml-3 w-5 h-5 group-hover:rotate-12 transition-transform relative z-10 text-white/80" />
@@ -60,7 +60,7 @@ export function Hero() {
       </div>
 
       {/* Bottom Area */}
-      <div className="absolute bottom-6 md:bottom-12 left-0 w-full px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 items-end gap-8 pointer-events-none">
+      <div className="absolute bottom-6 md:bottom-12 left-0 w-full px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 items-end gap-8 pointer-events-none ">
         {/* Left: Stats */}
         <div className="pointer-events-auto md:justify-self-start hidden md:block">
           <HeroStats />
